@@ -1,20 +1,21 @@
 <main class="tribute-page">
   <article class="tribute-article">
-    <header class="hero">
-      <p class="hero-name-top">JORGE MARIO</p>
-      <h1>BERGOGLIO</h1>
-      <p class="hero-name-bottom">PAPA FRANCISCO</p>
-    </header>
-
-    <section class="quote-photo-block" aria-label="Homenaje visual">
-      <div class="photo-frame">
-        <img src="foto_2.webp" alt="Retrato del Papa Francisco" />
-      </div>
-    </section>
+    <div class="containt">
+      <section class="quote-photo-block" aria-label="Homenaje visual">
+        <div class="photo-frame">
+          <img src="foto_2.webp" alt="Retrato del Papa Francisco" />
+        </div>
+      </section>
+      <header class="hero">
+        <p class="hero-name-top">JORGE MARIO</p>
+        <h1>BERGOGLIO</h1>
+        <p class="hero-name-bottom">PAPA FRANCISCO</p>
+      </header>
+    </div>
 
     <section class="text-block">
       <h2>CAMINO DE LA PAZ</h2>
-      <p class="dedication">En memoria agradecida a la vida y obra de Francisco</p>
+      <span class="dedication">En memoria agradecida a la vida y obra de Francisco</span>
 
       <p>
         La Quinta del Niño Dios ocupa un lugar esencial en la memoria histórica, religiosa y urbana
@@ -53,7 +54,7 @@
 
     <section class="text-block english-version">
       <h2>PATH OF PEACE</h2>
-      <p class="dedication">In grateful memory of the life and work of Francis</p>
+      <span class="dedication">In grateful memory of the life and work of Francis</span>
 
       <p>
         Quinta del Niño Dios holds an essential place in the historical, religious, and urban memory
@@ -90,6 +91,13 @@
     </section>
   </article>
 </main>
+
+<section class="button-download-section">
+  <button class="button-download" (click)="downloadPdf()">
+    <span>Descargar Pdf</span>
+  </button>
+</section>
+
 <footer class="tribute-footer">
   <img class="footer-logo" src="logo_1.webp" alt="Logo de la Municipalidad de Villa Carlos Paz" />
   <img

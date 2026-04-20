@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: './principal.html',
   styleUrl: './principal.scss',
 })
-export class Principal {}
+export class Principal {
+  downloadPdf() {
+    window.open('pdf.pdf', '_blank');
+  }
+}
