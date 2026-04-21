@@ -34,21 +34,21 @@ $gris-vcp: #303030;
 
   .hero-name-top {
     margin: 0;
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(1.2rem, 2.5vw, 2.2rem);
     color: $azul-vcp;
     font-weight: 400;
   }
 
   h1 {
     margin: 0.3rem 0;
-    font-size: clamp(1.2rem, 3.2vw, 3rem);
+    font-size: clamp(2rem, 3.5vw, 4rem);
     color: $azul-vcp;
     font-weight: 800;
   }
 
   .hero-name-bottom {
     margin: 0;
-    font-size: clamp(1.2rem, 3.2vw, 3rem);
+    font-size: clamp(2rem, 3.5vw, 4rem);
     color: #666666;
     font-weight: 700;
   }
@@ -109,11 +109,13 @@ $gris-vcp: #303030;
   position: relative;
   width: 100%;
   line-height: 0;
+  // box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .footer-base {
   display: block;
   width: 100%;
+  filter: drop-shadow(0 -5px 20px rgba(0, 0, 0, 0.22));
 }
 
 .footer-logo {
@@ -123,6 +125,7 @@ $gris-vcp: #303030;
   width: clamp(130px, 17vw, 250px);
   height: auto;
   z-index: 2;
+  filter: drop-shadow(0 -5px 20px rgba(0, 0, 0, 0.22));
 }
 
 .button-download-section {
@@ -153,7 +156,7 @@ $gris-vcp: #303030;
     padding: 1rem;
   }
   .tribute-footer {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 
   .footer-logo {
@@ -162,6 +165,11 @@ $gris-vcp: #303030;
   }
 
   .button-download-section {
-    margin-bottom: 3rem;
+    margin: 0rem;
+  }
+
+  .button-download {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
   }
 }
